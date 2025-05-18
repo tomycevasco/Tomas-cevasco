@@ -1,0 +1,264 @@
+@media (max-width: 1200px) {
+  .grid1 {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .grid2 {
+    grid-template-columns: 100%;
+  }
+  .titulo {
+    font-size: 24px;
+    letter-spacing: 6px;
+  }
+  .titulo span {
+    padding-left: 0;
+    display: block;
+  }
+  h1, h2 {
+    font-size: 7vw;
+  }
+}
+@media (max-width: 992px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .botonsito, .botonn {
+    width: 80%;
+    height: auto;
+  }
+  .minigrid {
+    grid-template-columns: 100%;
+  }
+  .grid2 {
+    margin: 5% 5%;
+  }
+}
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 20px;
+  }
+  h1, h2 {
+    font-size: 8vw;
+  }
+  .footerA {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .separado {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  nav ul li {
+    font-size: 14px;
+  }
+  .grid2 {
+    row-gap: 5vw;
+  }
+  .botonsito {
+    font-size: 14px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 0% 2%;
+}
+
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+nav ul li {
+  white-space: nowrap;
+}
+nav ul li a {
+  font-family: "PT Serif Caption", serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  display: flex;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.logo a:hover {
+  color: rgb(117, 84, 0);
+}
+
+.titulo {
+  font-size: 30px;
+  letter-spacing: 12px;
+}
+.titulo span {
+  font-size: 13px;
+  letter-spacing: 0px;
+  padding-left: 31%;
+}
+
+h1 {
+  display: flex;
+  text-align: justify;
+  width: 100%;
+  font-size: 8vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kantumruy Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 5vh;
+  transform: scaleY(0.8);
+}
+
+h2 {
+  font-family: "Kantumruy Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 3%;
+  font-size: 6vw;
+  transform: scaleY(0.8);
+  line-height: 70px;
+}
+h2 span {
+  margin-left: 6%;
+}
+
+h3 {
+  display: flex;
+  font-size: 10px;
+  justify-content: flex-start;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin-right: 80px;
+  margin-left: 2px;
+  letter-spacing: 0.6px;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 90px 300px;
+  column-gap: 1%;
+  row-gap: 2%;
+  margin: 4%;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 46.5% 46.5%;
+  grid-template-rows: repeat(5, 75vh);
+  margin: 5% 18%;
+  column-gap: 4vw;
+  row-gap: 3vw;
+  overflow: hidden;
+}
+
+.minigrid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+section .jeje {
+  grid-area: 1/1/3/2;
+}
+
+.tamanio {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tamanio2 {
+  height: 92%;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.botonsito,
+.botonn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botonsito {
+  width: 10vw;
+  height: 6vh;
+}
+
+.botonn {
+  height: 7vh;
+  width: 9vw;
+}
+
+footer {
+  border-top: solid 2px rgba(150, 150, 150, 0.323);
+  height: 10vh;
+}
+
+.footerA {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
+  padding: 0;
+  height: 10vh;
+}
+.footerA li {
+  margin-left: 20px;
+}
+.footerA li a {
+  font-family: "PT Serif Caption", serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.separado {
+  margin-left: 46vw;
+}
+
+.contenedor1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+/*# sourceMappingURL=style.css.map */
